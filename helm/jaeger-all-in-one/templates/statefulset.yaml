@@ -55,7 +55,7 @@ spec:
               containerPort: 5778
               protocol: TCP
             {{- if .Values.enableHttpOpenTelemetryCollector }}
-            - name: http-otlp-grpc
+            - name: http2-otlp-grpc
               containerPort: 4317
               protocol: TCP
             - name: http-otlp
